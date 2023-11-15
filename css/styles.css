@@ -1,0 +1,70 @@
+/*
+Colours used:
+Primary Color (Purple): #2f1fbd;
+Secondary Colour (Blue): #002dcf;
+*/
+body {
+    background-color: aliceblue;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px; 
+    font-weight: 400;
+    line-height: 1.6;
+    color:black;
+}
+h1, h2, h3, h4 {
+    line-height: 1.4;
+  }
+  h1 {
+    font-size: 2.75em;
+    font-weight: 800;
+  }
+  
+  h2 {
+    font-size: 2.25em;
+    font-weight: 800;
+  }
+  
+  h3 {
+    font-size: 1.75em;
+    font-weight: 600;
+  }
+  h4 {
+    font-size: 1.35em;
+    font-weight: 400;
+  }
+  img {
+    width: 100%;
+  }
+  a {
+    color: #1f0658;
+    text-decoration: none; 
+  }
+  a:hover {
+    color: #340342;
+    text-decoration: underline;
+  }
+  .button {
+    display: inline-block; 
+    background-color: #2f1fbd;
+    color: #ffffff;
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid #ffffff; 
+    transition: 0.2s opacity;
+  }
+  .button:hover {
+    opacity: 0.8; 
+    text-decoration: none;
+  }
+  .button.contact {
+    background-color: transparent;
+    color: #2f1fbd;
+    text-transform: uppercase;
+    border: 2px solid #2f1fbd;
+  }
+  .button.contact:hover {
+    background-color: #2f1fbd;
+    color: #ffffff;
+  }
+  
