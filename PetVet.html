@@ -14,21 +14,23 @@
 </head>
 <body>
 <header>
-    <div>
-        <img src="https://via.placeholder.com/150x50?text=Logo" alt="Essha Khan">
-        <nav>
-            <ul>
+    <div class="container"><!--"open container-->
+        <img class="logo" img src="https://via.placeholder.com/150x50?text=Logo" alt="Logo">
+        <nav> <!--"Navigation Menu"-->
+            <ul class="navigation">
             <li><a href="index.html" target="_self">Work</a></li>
             <li><a href="about.html" target="_self">About</a></li>
             <li><a href="#contact" target="_self">Contact</a></li>
             <li><a href="files/EsshaKhanResume.pdf" target="_blank" download>Download my Resume</a></li>
             </ul>
-        </nav>
-    </div>
+        </nav> <!--"close navigation menu"-->
+    </div><!--"close container-->
 </header>
 <main>
+<case>
    <!--"Pet Vet Case Study Section"-->
-   <div>
+   <div id="casestudy">
+   <div class="container">
     <h1>Pet Vet Case Study</h1>
     <picture><!--"Project Image"-->
         <source srcset="img/petvet_media/homepage/PetVet__Homepage@1x.jpg" media="(max-width:767px)">
@@ -336,27 +338,28 @@
                     <li>Improvement: I added an additional screen that explains the treatment’s purpose and how it’s
                     performed.</li>
                 </ul>
-   </div>
+            </div>
+        </div>
+    </case>
 </main>
+<footer>
     <!--"Footer Section"-->
-    <footer id="contact">
-    <div> 
-    <h2>Get in Touch</h2>
-    <p>Do you like my work and want to discuss opportunities? Please get in touch.
-    </p>
-    <div>
-        <a href="#mailto:esshakhan2000@gmail.com" class="button contact">Email me</a>
-    </div>
-    <!--Social Media Layout and Placeholders-->
-    <div>
-        <a href="#https://www.linkedin.com/in/essha-khan/" class="button" target="_blank">
-        <img src="LinkedIn.svg" alt="LinkedIn">
-    </a>
-    </div>
-    <div>
-    <p>Copyright Essha Khan 2023</p>
-    </div>
-</div>
-</footer>
+        <footer id="contact"> <!-- contact section -->
+        <div class="container"> <!-- open container -->
+        <h2>Get in Touch</h2> <!--heading for the section -->
+        <p>Do you like my work and want to discuss opportunities? Please get in touch.
+        </p>
+        <div>
+            <a href="#mailto:esshakhan2000@gmail.com" class="button contact">Email me</a>
+        </div>
+        <!--Social Media Layout and Placeholders-->
+        <div>
+            <a href="#https://www.linkedin.com/in/essha-khan/" class="button social" target="_blank">
+            <img src="LinkedIn.svg" alt="LinkedIn"></a>
+        </div>
+        <p>Copyright Essha Khan 2023</p>
+    </div><!-- close container-->
+    </div><!-- close contact section -->
+    </footer>
 </body>
 </html>

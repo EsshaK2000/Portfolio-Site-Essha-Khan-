@@ -3,8 +3,53 @@ Colours used:
 Primary Color (Purple): #2f1fbd;
 Secondary Colour (Blue): #002dcf;
 */
+.logo {
+  max-width: 250px;
+  text-align: center;
+}
+header {
+  background-color: #ffffff;
+  padding: 10px 0;
+  text-align: center;
+  margin: 10px;
+  position:relative;
+  border-bottom:3px solid #2f1fbd;  
+	box-shadow: 0px 18px 17px rgba(0, 0, 0, 0.2)  ; 
+	-webkit-box-shadow: 1px 18px 17px rgba(0, 0, 0, 0.2)  ; 
+	-moz-box-shadow: 1px 18px 17px rgba(0, 0, 0, 0.2)  ; 
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+nav > ul > li {
+  display:inline-block;
+}
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #000000;
+}
+nav > ul > li > a:visited {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #2f1fbd;
+}
+/* Layout Stying */
+.container {
+  padding: 0 15px;
+}
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+#work.row {
+  padding-bottom: 25px; border-bottom: 1px solid #2f1fbd;
+}
 body {
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
     font-family: 'Inter', sans-serif;
     font-size: 16px; 
     font-weight: 400;
@@ -50,7 +95,6 @@ h1, h2, h3, h4 {
     font-weight: 400;
     padding: 10px;
     border-radius: 3px;
-    border-bottom: 2px solid #ffffff; 
     transition: 0.2s opacity;
   }
   .button:hover {
@@ -58,13 +102,52 @@ h1, h2, h3, h4 {
     text-decoration: none;
   }
   .button.contact {
-    background-color: transparent;
-    color: #2f1fbd;
+    background-color: #ffffff;
+    color: #000000;
     text-transform: uppercase;
-    border: 2px solid #2f1fbd;
+    border: 2px solid #ffffff;
   }
   .button.contact:hover {
     background-color: #2f1fbd;
     color: #ffffff;
   }
-  
+  .button.social {
+    background-color: #ffffff;
+    color: #ffffff;
+    text-transform: uppercase;
+    border: 1px solid #ffffff;
+    padding: 3px;
+  }
+  .button.social:hover {
+    background-color:#2f1fbd;
+    color: #ffffff
+    text-transform: uppercase;
+    border:1px solid #2f1fbd;
+    padding: 3px;
+  }
+  #hero {
+    background-color: #ffffff;
+    padding: 20px 0;
+    padding-bottom: 0px;
+  }
+  #work {
+    background-color: #ffffff;
+    padding: 20px 0;
+    padding-bottom:60px;
+  }
+  #contact {
+    background-color: #000000;
+    padding: 20px 0;
+    color: #ffffff;
+    text-align: center;
+  }
+  #about {
+    background-color: #ffffff;
+    padding: 20px 0;
+    padding-bottom:60px;
+  }
+  #casestudy {
+    background-color: #ffffff;
+    padding: 20px 0;
+    padding-bottom:60px;
+  }

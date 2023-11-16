@@ -14,25 +14,26 @@
 </head>
 <body>
 <header>
-    <div>
-        <img src="https://via.placeholder.com/150x50?text=Logo" alt="Essha Khan">
-        <nav>
-            <ul>
+    <div class="container"><!--"open container-->
+        <img class="logo" img src="https://via.placeholder.com/150x50?text=Logo" alt="Logo">
+        <nav> <!--"Navigation Menu"-->
+            <ul class="navigation">
             <li><a href="index.html" target="_self">Work</a></li>
             <li><a href="about.html" target="_self">About</a></li>
             <li><a href="#contact" target="_self">Contact</a></li>
             <li><a href="files/EsshaKhanResume.pdf" target="_blank" download>Download my Resume</a></li>
             </ul>
-        </nav>
-    </div>
+        </nav> <!--"close navigation menu"-->
+    </div><!--"close container-->
 </header>
+
 <main>
+    <hero>
     <!--"Hero Section"-->
-    <hero id="Hero">
-    <div>
-        <div>
-            <h1> Hi, my name is Essha Khan. I'm a UX researcher and designer from Toronto, Canada. </h1>
-                    <p>
+    <div id="hero"> <!-- hero section -->
+    <div class="container"> <!-- open container -->
+            <h1> Hi, my name is Essha Khan. I'm a UX researcher and designer from Toronto, Canada. </h1> <!-- heading for the section -->
+                    <p> <!-- open paragraph -->
                         <span>
                         <br>UX/UI designer on a mission to improve design through user-centered solutions.
                         <br> recently — 
@@ -40,35 +41,39 @@
                         <br> 🎓received her b.s. in technology (minor in marketing) from Toronto Metropolitan University 
                         <br> 👩🏽‍💻interned at Royal Bank of Canada Winter + Summer 2022 and Fanique Group Summer 2021 
                         </span>
-                    </p>
+                    </p> <!-- close paragraph -->
+        </div> <!-- close container -->
+    </div> <!-- close hero section -->
+</hero>
+<work>
+    <!--"Work Section"-->
+    <div id="work"><!-- work section -->
+    <div class="container"><!-- open container -->
+    <h2>My Work</h2><!-- heading for the section -->
+    <div class="row"> <!-- open row that holds (2) columns for project-->
+        <picture>
+            <source srcset="img/petvet_media/homepage/PetVet__Homepage@1x.jpg" media="(max-width:767px)">
+            <img src="img/petvet_media/homepage/PetVet__Homepage@2x.jpg" alt="Pet Vet App Wireframes Mockup">
+        </picture>
+    </div><!-- end first column -->
+    <div><!-- open second column (used for text) -->
+    <h3>Pet Vet</h3><!-- heading for the project -->
+        <p><!-- open paragraph -->
+            A veternarian telemedicine application for pet owners.
+        </p><!-- end paragraph -->
+        <a href="petvet.html" class="button" target="_blank">Read more</a><!-- button or link label -->
         </div>
-    </div>
-    </hero>
-        <!--"Work Section"-->
-        <work id="Work">
-        <h2>My Work</h2>
-        <div><!-- open row that holds (2) columns for project -->
-            <div><!-- open first column (used for image) -->
-                <picture>
-                    <source srcset="img/petvet_media/homepage/PetVet__Homepage@1x.jpg" media="(max-width:767px)">
-                    <img src="img/petvet_media/homepage/PetVet__Homepage@2x.jpg" alt="Pet Vet App Wireframes Mockup">
-                </picture>
-            </div><!-- end first column -->
-            <div><!-- open second column (used for text) -->
-              <h3>Pet Vet</h3><!-- heading for the project -->
-              <p><!-- open paragraph -->
-                A veternarian telemedicine application for pet owners.
-              </p><!-- end paragraph -->
-              <a href="#petvet.html" class="button" target="_blank">Read more</a><!-- button or link label -->
-            </div><!-- end second column -->
-          </div><!-- end row that holds (2) columns for project -->
-        <a></a>
-        </work>
+        </div><!-- end second column -->
+        </div><!-- end row that holds (2) columns for project -->
+    </div><!-- lose container -->
+</div> <!-- close work section-->
+</work>
 </main>
-    <!--"Footer Section"-->
-    <footer id="contact">
-    <div> 
-    <h2>Get in Touch</h2>
+<footer>
+<!--"Footer Section"-->
+    <footer id="contact"> <!-- contact section -->
+    <div class="container"> <!-- open container -->
+    <h2>Get in Touch</h2> <!--heading for the section -->
     <p>Do you like my work and want to discuss opportunities? Please get in touch.
     </p>
     <div>
@@ -76,14 +81,12 @@
     </div>
     <!--Social Media Layout and Placeholders-->
     <div>
-        <a href="#https://www.linkedin.com/in/essha-khan/" class="button" target="_blank">
-        <img src="LinkedIn.svg" alt="LinkedIn">
-    </a>
+        <a href="#https://www.linkedin.com/in/essha-khan/" class="button social" target="_blank">
+        <img src="LinkedIn.svg" alt="LinkedIn"></a>
     </div>
-    <div>
     <p>Copyright Essha Khan 2023</p>
-    </div>
-</div>
+</div><!-- close container-->
+</div><!-- close contact section -->
 </footer>
 </body>
 </html>
