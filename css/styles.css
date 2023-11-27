@@ -1,3 +1,51 @@
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+header{
+  text-align:unset;
+  padding: 20px 0 13px;
+}
+nav{
+  width:auto;
+  float: right;
+  margin-top: 4px;
+}
+.col-md-6{
+  width: 50%;
+  }
+[class*="col-"] {
+    float:left;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+#about-page h3 { margin-top: 0;}
+}
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  text-align:unset;
+  padding:20px 0 13px;
+
+.col-lg-7{
+width: 60%;
+float: right;
+margin-bottom: 50px
+}
+.col-lg-5{
+width: 40%
+float:right;
+margin-bottom: 50px;
+}
+}
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+  text-align:unset;
+  padding:20px 0 13px;
+}
 /*
 Colours used:
 Primary Color (Purple): #2f1fbd;
@@ -43,7 +91,12 @@ nav > ul > li > a:visited {
   padding: 0 15px;
 }
 .row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  margin: 25px 0;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 #work.row {
   padding-bottom: 25px; border-bottom: 1px solid #2f1fbd;
@@ -129,6 +182,10 @@ h1, h2, h3, h4 {
     background-color: #ffffff;
     padding: 20px 0;
     padding-bottom: 0px;
+    text-align: center;
+  }
+  #hero span {
+    display: block;
   }
   #work {
     background-color: #ffffff;
@@ -151,3 +208,49 @@ h1, h2, h3, h4 {
     padding: 20px 0;
     padding-bottom:60px;
   }
+  /* ==============================
+SVG Animation
+================================= */
+  .svg-animation-container {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  #smallbox {
+    animation: changeColor 3s infinite
+    alternate;
+  }
+  @keyframes color-change {
+    from {fill:#edc655;}
+    to {fill: #f7147a;}
+  }
+  #longbox1 {
+    animation: changeColor 3s infinite
+    alternate;
+  }
+  keyframes color-change {
+    from {fill:#edc655;}
+    to {fill: #f7147a;}
+  }
+  #longbox2 {
+    animation: changeColor 3s infinite
+    alternate;
+  }
+  keyframes color-change {
+    from {fill:#edc655;}
+    to {fill: #f7147a;}
+  }
+  #lefthand {
+    animation: rotateArm 2s infinite alternate;
+    transform-origin: left;
+  }
+  @keyframes rotatearm {
+  0% {
+    transform: rotate(10deg);
+  }
+  70% {
+    transform: rotate(-5deg);
+  }
+  }
+ 
+  
