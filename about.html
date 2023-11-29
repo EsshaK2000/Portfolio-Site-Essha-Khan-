@@ -28,18 +28,18 @@
 </header>
 
 <main>
-    <about>
+    
      <!--"About Section"-->
     <div id="about"><!-- about section-->
     <div class="sectionblock"> <!-- open 2x section block -->
     <div class="container"> <!--"Container/Wrapper"-->
         <h1>About</h1> <!--"section heading"-->
-        <div class="row"> <!-- open row that holds (2) columns for project-->
-        <div class="col-md-6 col-lg-7"> 
+        <div id="headshot">
         <picture> <!--"headshot"-->
             <source srcset="img/EsshaKhan_Headshot@1x.jpg" media="(max-width:767px)">
             <img src="img/EsshaKhan_Headshot@1x.jpg" alt="Essha Khan's Headshot">
-        </picture> 
+        </picture>
+        </div> 
         <h2>My Story</h2> <!--"sub section heading"-->
             <p> <!--"begin parapgraph"-->
                 Hi, I’m Essha👋
@@ -63,6 +63,9 @@
             🍔, and watching action/adventure-filled TV shows on Netflix📺.
             </p><!--"close paragraph"-->
     <h2>Skills & Tools</h2><!--"sub section heading"-->
+    <div class="row">
+            <div class="col-md-6 col-lg-7"> 
+
     <h3>Relevant Skills</h3> <!--"sub section heading 2"-->
         <ul>
             <li>User research</li>
@@ -85,6 +88,8 @@
             <li>Video Editing & Photo Retouching</li>
             <li>Digital Asset Management</li>
         </ul>
+        </div><!--end col-->
+        <div class="col-md-6 col-lg-7"> 
     <h3>Tools I use</h3> <!--"sub section heading 2"-->
         <ul>
             <li>Figma</li>
@@ -98,16 +103,16 @@
             <li>HTML,CSS, & JavaScript</li>
             <li>Google Analytics</li>
         </ul>
+        </div><!--end col-->
+        </div><!--end row-->
      <a href="files/EsshaKhanResume.pdf" class="button" target="blank">Download my Resume</a>
-</div> <!-- close columns -->
-</div> <!-- close row for columns -->
-</div> <!-- close container -->
+     </div><!-- end about-->
+
     </div> <!-- close 2x section block -->
     </div><!-- close about section-->
-</about>
+
 
 </main>
-<footer>
     <!--"Footer Section"-->
         <footer id="contact"> <!-- contact section -->
         <div class="container"> <!-- open container -->
@@ -124,7 +129,7 @@
         </div>
         <p>Copyright Essha Khan 2023</p>
     </div><!-- close container-->
-    </div><!-- close contact section -->
     </footer>
+<script src="js/scripts.js"></script>
 </body>
 </html>
