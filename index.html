@@ -11,18 +11,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <title>Essha Khan UX/UI Designer Toronto</title>
+    <script src="https://kit.fontawesome.com/3d0e9fd603.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <header>
     <div class="container"><!--"open container-->
+    <div class="navtoggle" id="myNavtoggle">
         <img class="logo" img src="https://via.placeholder.com/150x50?text=Logo" alt="Logo">
         <nav> <!--"Navigation Menu"-->
             <ul class="navigation">
             <li><a href="index.html" target="_self">Work</a></li>
             <li><a href="about.html" target="_self">About</a></li>
-            <li><a href="#contact" target="_self">Contact</a></li>
-            <li><a href="files/EsshaKhanResume.pdf" target="_blank" download>Download my Resume</a></li>
+            <li><a href="#contact" target="_self" onclick="menuToggle()">Contact</a></li>
+            <li><a href="files/EsshaKhanResume.pdf" target="_blank" download>Download my Resume </a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
             </ul>
+        </div>
         </nav> <!--"close navigation menu"-->
     </div><!--"close container-->
 </header>
@@ -137,6 +141,7 @@
     <p>Copyright Essha Khan 2023</p>
 </div><!-- close container-->
 </footer>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="js/scripts.js"></script>
 </body>
 </html>
